@@ -16,11 +16,11 @@ SVN::Notify::Filter::AuthZMail - Determines Subversion accounts to receive the e
 
 =head1 VERSION
 
-Version 1.00
+Version 1.01
 
 =cut
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 my $acl;          # Access control list, via SVN::Access
 my $debugflag=0;  # 1=debug output, not for general use

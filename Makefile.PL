@@ -9,7 +9,9 @@ WriteMakefile(
     ABSTRACT_FROM       => 'lib/SVN/Notify/Filter/AuthZMail.pm',
     PL_FILES            => {},
     PREREQ_PM => {
-        'Test::More' => 0,
+        'Test::More'  => 0,
+        'SVN::Notify' => '2.72', #introduced pre_prepare
+        'SVN::Access' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'SVN-Notify-Filter-AuthZMail-*' },
